@@ -2,7 +2,6 @@ apiVersion: anywhere.eks.amazonaws.com/v1alpha1
 kind: Cluster
 metadata:
   annotations:
-    anywhere.eks.amazonaws.com/managed-by-cli: "true"
     anywhere.eks.amazonaws.com/management-components-version: v0.22.2-dev+build.0
   name: release-i-05f86-8d47a64
   namespace: default
@@ -37,7 +36,7 @@ spec:
   gitOpsRef:
     kind: FluxConfig
     name: eksa-test
-  kubernetesVersion: "1.30"
+  kubernetesVersion: "1.31"
   licenseToken: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaWNlbnNlSWQiOiJsLWJkMmYxZDNkNDhmOTRiYzU4M2QyZDkwNDAxN2NkM2M5IiwibGljZW5zZVZlcnNpb24iOiIxIiwiYmVnaW5WYWxpZGl0eSI6IjIwMjQtMDMtMjBUMjA6NDc6MTMuMDAwWiIsImVuZFZhbGlkaXR5IjoiMjAyNS0wMy0yMVQyMDo0NzoxMy4wMDBaIiwic3Vic2NyaXB0aW9uSWQiOiI5ZjhhMDdhYS1hNTZiLTQ4OWQtYWQwNS1jMmIzMGM1MzljMDU6ZGNiYjE5NTQiLCJzdWJzY3JpcHRpb25OYW1lIjoiSW50ZWdyYXRpb24tVGVzdC05MWYzY2UzYi1jMGVlLTQzOGMtODEwMS1lODdhNDg5MTIwNDAiLCJhY2NvdW50SWQiOiI0MTI2ODc5NDgzOTgiLCJyZWdpb24iOiJ1cy13ZXN0LTIifQ.AiheXFAjEe5NdumVOcGKsJhRthpny_Lnjpotqvghb2Qq8QS-_iZRnVG146uVyQlzX99sLvDtVE5V48x9xAxMGA
   machineHealthCheck:
     maxUnhealthy: 100%
@@ -84,7 +83,7 @@ spec:
   computeOffering:
     name: Large Instance
   template:
-    name: kubernetes-1-30-eks-26-redhat-9
+    name: kubernetes-1-31-eks-15-redhat-9
   users:
   - name: capc
     sshAuthorizedKeys:
@@ -101,7 +100,7 @@ spec:
   computeOffering:
     name: Large Instance
   template:
-    name: kubernetes-1-30-eks-26-redhat-9
+    name: kubernetes-1-31-eks-15-redhat-9
   users:
   - name: capc
     sshAuthorizedKeys:
@@ -120,7 +119,7 @@ spec:
   computeOffering:
     name: Large Instance
   template:
-    name: kubernetes-1-30-eks-26-redhat-9
+    name: kubernetes-1-31-eks-15-redhat-9
   users:
   - name: capc
     sshAuthorizedKeys:
